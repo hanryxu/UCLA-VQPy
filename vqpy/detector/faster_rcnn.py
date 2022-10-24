@@ -60,7 +60,7 @@ def postprocess(detections, image_size):
         rets.append({"tlbr": np.asarray(tlbr),
                      "score": score.item(),
                      "class_id": class_id})
-        return rets
+    return rets
 
 
 register("faster_rcnn", FasterRCNNDdetector, "FasterRCNN-10.onnx")
